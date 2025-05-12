@@ -1,1 +1,3 @@
-centest.nvim
+# centest.nvim
+---
+A dead simple test runner.
