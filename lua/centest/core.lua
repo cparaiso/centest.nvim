@@ -16,10 +16,8 @@ local function set_buffer_opts(buf)
 	vim.api.nvim_set_option_value("modifiable", true, { buf = buf })
 	vim.api.nvim_set_option_value("number", false, { win = M.config.output_win })
 	vim.api.nvim_set_option_value("relativenumber", false, { win = M.config.output_win })
+	vim.api.nvim_set_option_value("wrap", true, { buf = buf })
 end
-
-local function execute_tests() end
-local function close_tests() end
 
 function M.init(config)
 	M.config = config
