@@ -13,7 +13,6 @@ function M.init(state)
 		group = vim.api.nvim_create_augroup("CentestGroup", { clear = true }),
 		pattern = "*",
 		callback = function()
-			vim.notify(state.output_win)
 			if state.window_open and state.output_win ~= nil then
 				core.execute_command()
 			end
